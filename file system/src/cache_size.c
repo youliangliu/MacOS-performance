@@ -8,6 +8,7 @@
 const int TESTSIZE = 7;
 const off_t BLOCKSIZE = 8 * 1024;
 const off_t FILESIZES[] = {
+    (double)0.5 * (double)1073741824,
     (double)4 * (double)1073741824,
     (double)6 * (double)1073741824,
     (double)8 * (double)1073741824,
@@ -16,6 +17,7 @@ const off_t FILESIZES[] = {
     (double)14 * (double)1073741824,
     (double)16 * (double)1073741824};
 const char *TESTFILES[] = {
+    "../data/0.5gb_bin.dat",
     "../data/4gb_bin.dat",
     "../data/6gb_bin.dat",
     "../data/8gb_bin.dat",
@@ -96,7 +98,6 @@ int main(int argc, const char *argv[])
         // Printout results
         timePerRead = totalTime / (FILESIZES[i] / BLOCKSIZE);
         printf(
-            "Average time per read for filesize %lld, is %llu \n",
-            FILESIZES[i], timePerRead);
+            "Average time per read is %llu \n\n", timePerRead);
     }
 }
