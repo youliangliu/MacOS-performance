@@ -18,8 +18,10 @@ using namespace std;
 class cpu {
 private:
     double get_read_overhead();
+    double get_loop_overhead();
 public:
     void test_read_overhead(fstream &);
+    void test_loop_overhead(fstream &);
 };
 
 

@@ -11,4 +11,5 @@ int main(){
     fstream file;
 
     cpu.test_read_overhead(file);
+    cpu.test_loop_overhead(file);
 }

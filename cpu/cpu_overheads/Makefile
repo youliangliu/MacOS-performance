@@ -1,5 +1,5 @@
 all:
-	g++ main.cpp cpu.cpp -o cpu
+	g++ main.cpp cpu.cpp -o test
 
 clean:
-	rm -rf *o cpu
+	rm -rf *o test
