@@ -51,6 +51,7 @@ double cache_access_time(int arraySize, int strideSize){
     return ((double) sum / LOADS);
 }
 
+/*
 void test_ram_access_time(fstream &file, int arraySize, int strideSize){
     cout << "Running with array size: " << arraySize << endl;
     cout << "Running with stride size: " << strideSize << endl;
@@ -64,7 +65,7 @@ void seperate_data(fstream &file){
     file << setiosflags(ios::fixed) << "--------------------------------------------" << "\n";
     file.close();
 }
-
+*/
 int main(){
 
 
