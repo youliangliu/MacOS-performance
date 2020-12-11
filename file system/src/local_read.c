@@ -1,8 +1,7 @@
 #include "local_read.h"
 
-uint64_t sequential_read(off_t readSize)
+uint64_t sequential_read(off_t readSize, const char *msg, char *file)
 {
-    const char *FILENAME = "../data/1gb_bin.dat";
     const off_t BLOCKSIZE = 8 * 1024;
     void *readBuffer = malloc(BLOCKSIZE);
     int fd;
@@ -11,7 +10,7 @@ uint64_t sequential_read(off_t readSize)
     uint64_t start, totalTime, timePerRead;
 
     // Open file and disable cache
-    fd = open(FILENAME, O_RDONLY | O_SYNC);
+    fd = open(file, O_RDONLY | O_SYNC);
     if (fcntl(fd, F_NOCACHE, 1) == -1)
     {
         printf("Fail to disable cache.\n");
@@ -30,13 +29,13 @@ uint64_t sequential_read(off_t readSize)
     close(fd);
     free(readBuffer);
     timePerRead = totalTime / (readSize / BLOCKSIZE);
-    printf("Sequential Read: Average time per read is %llu \n\n", timePerRead);
+    printf("%s", msg);
+    printf(" - Sequential Read: Average time per read is %llu \n", timePerRead);
     return timePerRead;
 }
 
-uint64_t random_read(off_t readSize)
+uint64_t random_read(off_t readSize, const char *msg, char *file)
 {
-    const char *FILENAME = "../data/1gb_bin.dat";
     const off_t BLOCKSIZE = 8 * 1024;
     void *readBuffer = malloc(BLOCKSIZE);
     int fd, readTimes, seed;
@@ -44,7 +43,7 @@ uint64_t random_read(off_t readSize)
     uint64_t start, totalTime, timePerRead;
 
     // Open file and disable cache
-    fd = open(FILENAME, O_RDONLY | O_SYNC);
+    fd = open(file, O_RDONLY | O_SYNC);
     if (fcntl(fd, F_NOCACHE, 1) == -1)
     {
         printf("Fail to disable cache.\n");
@@ -65,6 +64,7 @@ uint64_t random_read(off_t readSize)
     close(fd);
     free(readBuffer);
     timePerRead = totalTime / (readSize / BLOCKSIZE);
-    printf("Random Read: Average time per read is %llu \n\n", timePerRead);
+    printf("%s", msg);
+    printf(" - Random Read: Average time per read is %llu \n", timePerRead);
     return timePerRead;
 }

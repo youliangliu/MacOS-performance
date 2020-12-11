@@ -10,8 +10,8 @@
 
 #include "rdtsc.h"
 
-uint64_t sequential_read(off_t readSize);
+uint64_t sequential_read(off_t readSize, const char *msg, char *file);
 
-uint64_t random_read(off_t readSize);
+uint64_t random_read(off_t readSize, const char *msg, char *file);
 
 #endif
