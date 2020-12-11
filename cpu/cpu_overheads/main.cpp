@@ -12,4 +12,6 @@ int main(){
 
     cpu.test_read_overhead(file);
     cpu.test_loop_overhead(file);
+    cpu.test_procedure_call_overhead(file);
+    cpu.test_system_call_overhead(file);
 }
