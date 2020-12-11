@@ -38,7 +38,7 @@ private:
     void call_6(int a, int b, int c, int d, int e, int f);
     void call_7(int a, int b, int c, int d, int e, int f, int g);
     vector<double> procedure_call_overhead();
-    double system_call_overhead();
+    double system_call_overhead(fstream &);
 public:
     void test_read_overhead(fstream &);
     void test_loop_overhead(fstream &);

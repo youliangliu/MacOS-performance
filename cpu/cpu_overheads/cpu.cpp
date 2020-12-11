@@ -168,12 +168,12 @@ void cpu::test_procedure_call_overhead(fstream &file){
     file.close();
 }
 
-double cpu::system_call_overhead(){
+double cpu::system_call_overhead(fstream &file){
     uint64_t start, end;
     uint64_t sum = 0;
     for(int i=0; i<ITERATIONS; i++){
         start = rdtsc();
-        getpid();
+        file.open("test.txt");
         end = rdtsc();
         sum += (end - start);
     }
@@ -184,7 +184,8 @@ void cpu::test_system_call_overhead(fstream &file){
     cout << "Testing system call overhead..." << endl;
     file.open("system_call_overhead.txt", ios::out);
     for(int i=0; i<10; i++){
-        file << setiosflags(ios::fixed) << system_call_overhead() << "\n";
+        fstream fileTest;
+        file << setiosflags(ios::fixed) << system_call_overhead(fileTest) << "\n";
     }
     file.close();
 }
