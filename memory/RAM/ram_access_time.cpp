@@ -69,15 +69,28 @@ int main(){
 
 
     fstream file;
+    file.open("ram_access_time.txt", ios::out);
     for(int i=0; i<7; i++){
         for(int j=0; j<10; j++){
-            cout << cache_access_time(arraySize[j], strideSize[i]) << endl;
+            file << setiosflags(ios::fixed) << cache_access_time(arraySize[j], strideSize[i]) << "\n";
+            //test_ram_access_time(file, arraySize[i], strideSize[j]);
+        }
+        file << setiosflags(ios::fixed) << "\n";
+        file << setiosflags(ios::fixed) << "\n";
+    }
+    file.close();
+
+/*
+    for(int i=0; i<7; i++){
+        for(int j=0; j<10; j++){
+            file << setiosflags(ios::fixed) << cache_access_time(arraySize[j], strideSize[i]) << "\n";
             //test_ram_access_time(file, arraySize[i], strideSize[j]);
         }
         cout << endl;
         cout << endl;
         //seperate_data(file);
     }
+*/
 
 
 }
