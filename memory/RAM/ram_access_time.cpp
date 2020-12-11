@@ -18,9 +18,9 @@ static __inline__ unsigned long long rdtsc(void)
 }
 
 
-int arraySize[10] = {pow(2,12), pow(2, 14), pow(2, 15), pow(2, 16),
+int arraySize[11] = {pow(2,12), pow(2, 14), pow(2, 15), pow(2, 16),
                      pow(2, 17), pow(2, 18), pow(2, 19), pow(2, 21),
-                     pow(2, 24), pow(2, 30)};
+                     pow(2, 24), pow(2, 28), pow(2, 30)};
 int strideSize[7] = {pow(2,2), pow(2,5), pow(2,7), pow(2,10), pow(2,20), pow(2, 22), pow(2, 24)};
 
 
@@ -71,7 +71,8 @@ int main(){
     fstream file;
     file.open("ram_access_time.txt", ios::out);
     for(int i=0; i<7; i++){
-        for(int j=0; j<10; j++){
+        for(int j=0; j<11; j++){
+            file << setiosflags(ios::fixed) << "Array size is: " << log2(arraySize[j]) << "\n";
             file << setiosflags(ios::fixed) << cache_access_time(arraySize[j], strideSize[i]) << "\n";
             //test_ram_access_time(file, arraySize[i], strideSize[j]);
         }

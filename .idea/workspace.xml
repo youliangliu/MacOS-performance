@@ -28,7 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5abb5b7-82e2-4ef9-a7fb-eedba48e7b28" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/RAM/ram_access_time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM/ram_access_time.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/ram_access_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM/ram_access_time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/test" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM/test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
