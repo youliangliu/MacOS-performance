@@ -8,7 +8,10 @@
 const int TESTSIZE = 7;
 const off_t BLOCKSIZE = 8 * 1024;
 const off_t FILESIZES[] = {
+    (double)0.25 * (double)1073741824,
     (double)0.5 * (double)1073741824,
+    (double)1 * (double)1073741824,
+    (double)2 * (double)1073741824,
     (double)4 * (double)1073741824,
     (double)6 * (double)1073741824,
     (double)8 * (double)1073741824,
@@ -17,7 +20,10 @@ const off_t FILESIZES[] = {
     (double)14 * (double)1073741824,
     (double)16 * (double)1073741824};
 const char *TESTFILES[] = {
+    "../data/0.25gb_bin.dat",
     "../data/0.5gb_bin.dat",
+    "../data/1gb_bin.dat",
+    "../data/2gb_bin.dat",
     "../data/4gb_bin.dat",
     "../data/6gb_bin.dat",
     "../data/8gb_bin.dat",

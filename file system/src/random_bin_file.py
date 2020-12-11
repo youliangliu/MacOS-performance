@@ -14,7 +14,10 @@ def generate_big_random_bin_file(filename, size):
 
 
 if __name__ == '__main__':
+    generate_big_random_bin_file('../data/0.25gb_bin.dat', 256*1024*1024)
     generate_big_random_bin_file('../data/0.5gb_bin.dat', 512*1024*1024)
+    generate_big_random_bin_file('../data/1gb_bin.dat', 1024*1024*1024)
+    generate_big_random_bin_file('../data/2gb_bin.dat', 2*1024*1024*1024)
     generate_big_random_bin_file('../data/4gb_bin.dat', 4*1024*1024*1024)
     generate_big_random_bin_file('../data/6gb_bin.dat', 6*1024*1024*1024)
     generate_big_random_bin_file('../data/8gb_bin.dat', 8*1024*1024*1024)
