@@ -1,5 +1,5 @@
-#ifndef CACHE_SIZE_H
-#define CACHE_SIZE_H
+#ifndef LOCAL_READ_H
+#define LOCAL_READ_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,6 +10,8 @@
 
 #include "rdtsc.h"
 
-void cache_size_test();
+uint64_t sequential_read(off_t readSize);
+
+uint64_t random_read(off_t readSize);
 
 #endif

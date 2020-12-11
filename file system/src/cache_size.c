@@ -1,34 +1,33 @@
 #include "cache_size.h"
 
-const int TESTSIZE = 7;
-const off_t BLOCKSIZE = 8 * 1024;
-const off_t FILESIZES[] = {
-    (double)0.25 * (double)1073741824,
-    (double)0.5 * (double)1073741824,
-    (double)1 * (double)1073741824,
-    (double)2 * (double)1073741824,
-    (double)4 * (double)1073741824,
-    (double)6 * (double)1073741824,
-    (double)8 * (double)1073741824,
-    (double)10 * (double)1073741824,
-    (double)12 * (double)1073741824,
-    (double)14 * (double)1073741824,
-    (double)16 * (double)1073741824};
-const char *TESTFILES[] = {
-    "../data/0.25gb_bin.dat",
-    "../data/0.5gb_bin.dat",
-    "../data/1gb_bin.dat",
-    "../data/gb_bin.dat",
-    "../data/4gb_bin.dat",
-    "../data/6gb_bin.dat",
-    "../data/8gb_bin.dat",
-    "../data/10gb_bin.dat",
-    "../data/12gb_bin.dat",
-    "../data/14gb_bin.dat",
-    "../data/16gb_bin.dat"};
-
-int cache_size_test()
+void cache_size_test()
 {
+    const off_t FILESIZES[] = {
+        (double)0.25 * (double)1073741824,
+        (double)0.5 * (double)1073741824,
+        (double)1 * (double)1073741824,
+        (double)2 * (double)1073741824,
+        (double)4 * (double)1073741824,
+        (double)6 * (double)1073741824,
+        (double)8 * (double)1073741824,
+        (double)10 * (double)1073741824,
+        (double)12 * (double)1073741824,
+        (double)14 * (double)1073741824,
+        (double)16 * (double)1073741824};
+    const char *TESTFILES[] = {
+        "../data/0.25gb_bin.dat",
+        "../data/0.5gb_bin.dat",
+        "../data/1gb_bin.dat",
+        "../data/gb_bin.dat",
+        "../data/4gb_bin.dat",
+        "../data/6gb_bin.dat",
+        "../data/8gb_bin.dat",
+        "../data/10gb_bin.dat",
+        "../data/12gb_bin.dat",
+        "../data/14gb_bin.dat",
+        "../data/16gb_bin.dat"};
+    const off_t BLOCKSIZE = 8 * 1024;
+    const int TESTSIZE = 7;
     void *readBuffer = malloc(BLOCKSIZE);
     int fd;
     off_t bytesRead;
@@ -51,7 +50,7 @@ int cache_size_test()
         else
         {
             printf(" - Error reading file %d\n", i);
-            return -1;
+            return;
         }
         while (bytesRead < FILESIZES[i])
         {
@@ -75,7 +74,7 @@ int cache_size_test()
         else
         {
             printf(" - Error reading file %d\n", i);
-            return -1;
+            return;
         }
         while (bytesRead < FILESIZES[i])
         {
@@ -90,8 +89,6 @@ int cache_size_test()
 
         // Printout results
         timePerRead = totalTime / (FILESIZES[i] / BLOCKSIZE);
-        printf(
-            "Average time per read is %llu \n\n", timePerRead);
+        printf("Average time per read is %llu \n\n", timePerRead);
     }
-    return 0;
 }
