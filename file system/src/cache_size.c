@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
+#include "cache_size.h"
 
 const int TESTSIZE = 7;
 const off_t BLOCKSIZE = 8 * 1024;
@@ -23,7 +18,7 @@ const char *TESTFILES[] = {
     "../data/0.25gb_bin.dat",
     "../data/0.5gb_bin.dat",
     "../data/1gb_bin.dat",
-    "../data/2gb_bin.dat",
+    "../data/gb_bin.dat",
     "../data/4gb_bin.dat",
     "../data/6gb_bin.dat",
     "../data/8gb_bin.dat",
@@ -32,15 +27,7 @@ const char *TESTFILES[] = {
     "../data/14gb_bin.dat",
     "../data/16gb_bin.dat"};
 
-static inline uint64_t rdtsc()
-{
-    uint32_t lo, hi;
-    __asm__ __volatile__("rdtsc"
-                         : "=a"(lo), "=d"(hi));
-    return ((uint64_t)hi << 32) | lo;
-}
-
-int main(int argc, const char *argv[])
+int cache_size_test()
 {
     void *readBuffer = malloc(BLOCKSIZE);
     int fd;
@@ -106,4 +93,5 @@ int main(int argc, const char *argv[])
         printf(
             "Average time per read is %llu \n\n", timePerRead);
     }
+    return 0;
 }
