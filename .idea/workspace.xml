@@ -28,10 +28,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5abb5b7-82e2-4ef9-a7fb-eedba48e7b28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/RAM_access/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/RAM_access/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/RAM_bandwidth/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/RAM_bandwidth/ram_bandwidth.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/RAM/ram_access_time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM/ram_access_time.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/RAM/ram_access_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM/ram_access_time.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/RAM/test" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/ram_access_time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/ram_access_time.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/ram_access_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/ram_access_time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM/test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +67,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/memory/RAM_bandwidth" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
