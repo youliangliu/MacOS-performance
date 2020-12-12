@@ -1,0 +1,168 @@
+Array size is: 12.000000
+9.219536
+Array size is: 14.000000
+9.274436
+Array size is: 15.000000
+9.179674
+Array size is: 16.000000
+9.264790
+Array size is: 17.000000
+9.404836
+Array size is: 18.000000
+9.319426
+Array size is: 19.000000
+9.275610
+Array size is: 21.000000
+11.649652
+Array size is: 24.000000
+8.344454
+Array size is: 28.000000
+7.554364
+Array size is: 30.000000
+7.556300
+
+
+Array size is: 12.000000
+6.662234
+Array size is: 14.000000
+8.844224
+Array size is: 15.000000
+8.896622
+Array size is: 16.000000
+11.218172
+Array size is: 17.000000
+11.321266
+Array size is: 18.000000
+11.708062
+Array size is: 19.000000
+11.479114
+Array size is: 21.000000
+15.242536
+Array size is: 24.000000
+40.707944
+Array size is: 28.000000
+40.038370
+Array size is: 30.000000
+45.104390
+
+
+Array size is: 12.000000
+9.209900
+Array size is: 14.000000
+14.432750
+Array size is: 15.000000
+12.153248
+Array size is: 16.000000
+12.241620
+Array size is: 17.000000
+22.800306
+Array size is: 18.000000
+21.405826
+Array size is: 19.000000
+26.188258
+Array size is: 21.000000
+42.858748
+Array size is: 24.000000
+113.174900
+Array size is: 28.000000
+120.053968
+Array size is: 30.000000
+103.606804
+
+
+Array size is: 12.000000
+9.458200
+Array size is: 14.000000
+14.969678
+Array size is: 15.000000
+14.803164
+Array size is: 16.000000
+21.110888
+Array size is: 17.000000
+44.279590
+Array size is: 18.000000
+41.804522
+Array size is: 19.000000
+37.498370
+Array size is: 21.000000
+48.646846
+Array size is: 24.000000
+223.049558
+Array size is: 28.000000
+243.116688
+Array size is: 30.000000
+287.500856
+
+
+Array size is: 12.000000
+13.649520
+Array size is: 14.000000
+12.121990
+Array size is: 15.000000
+11.537112
+Array size is: 16.000000
+10.784152
+Array size is: 17.000000
+10.097524
+Array size is: 18.000000
+9.412258
+Array size is: 19.000000
+10.402696
+Array size is: 21.000000
+9.104980
+Array size is: 24.000000
+16.645948
+Array size is: 28.000000
+67.780496
+Array size is: 30.000000
+142.662560
+
+
+Array size is: 12.000000
+12.849606
+Array size is: 14.000000
+9.721158
+Array size is: 15.000000
+9.215394
+Array size is: 16.000000
+9.108244
+Array size is: 17.000000
+9.112082
+Array size is: 18.000000
+8.654478
+Array size is: 19.000000
+8.913300
+Array size is: 21.000000
+8.382762
+Array size is: 24.000000
+6.696090
+Array size is: 28.000000
+63.938132
+Array size is: 30.000000
+77.333148
+
+
+Array size is: 12.000000
+7.448262
+Array size is: 14.000000
+6.823606
+Array size is: 15.000000
+6.917132
+Array size is: 16.000000
+7.205792
+Array size is: 17.000000
+6.829006
+Array size is: 18.000000
+7.284184
+Array size is: 19.000000
+8.024020
+Array size is: 21.000000
+11.819188
+Array size is: 24.000000
+7.085196
+Array size is: 28.000000
+30.596838
+Array size is: 30.000000
+94.913222
+
+
