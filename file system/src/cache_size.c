@@ -17,7 +17,7 @@ void cache_size_test()
         "../data/4gb_bin.dat",
         "../data/6gb_bin.dat"};
     const off_t BLOCKSIZE = 8 * 1024;
-    const int TESTSIZE = 7;
+    const int TESTSIZE = 6;
     void *readBuffer = malloc(BLOCKSIZE);
     int fd;
     off_t bytesRead;
