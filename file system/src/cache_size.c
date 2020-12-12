@@ -8,24 +8,14 @@ void cache_size_test()
         (double)1 * (double)1073741824,
         (double)2 * (double)1073741824,
         (double)4 * (double)1073741824,
-        (double)6 * (double)1073741824,
-        (double)8 * (double)1073741824,
-        (double)10 * (double)1073741824,
-        (double)12 * (double)1073741824,
-        (double)14 * (double)1073741824,
-        (double)16 * (double)1073741824};
+        (double)6 * (double)1073741824};
     const char *TESTFILES[] = {
         "../data/0.25gb_bin.dat",
         "../data/0.5gb_bin.dat",
         "../data/1gb_bin.dat",
-        "../data/gb_bin.dat",
+        "../data/2gb_bin.dat",
         "../data/4gb_bin.dat",
-        "../data/6gb_bin.dat",
-        "../data/8gb_bin.dat",
-        "../data/10gb_bin.dat",
-        "../data/12gb_bin.dat",
-        "../data/14gb_bin.dat",
-        "../data/16gb_bin.dat"};
+        "../data/6gb_bin.dat"};
     const off_t BLOCKSIZE = 8 * 1024;
     const int TESTSIZE = 7;
     void *readBuffer = malloc(BLOCKSIZE);
