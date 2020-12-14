@@ -2,7 +2,7 @@
 // Created by 刘有亮 on 12/11/20.
 //
 
-#define ITERATIONS 100000
+#define ITERATIONS 1000000
 
 #include <iostream>
 #include <stdio.h>
@@ -11,12 +11,15 @@
 #include <unistd.h>
 using namespace std;
 
+
 static __inline__ unsigned long long rdtsc(void)
 {
     unsigned hi, lo;
     __asm__ __volatile__ ("rdtsc" : "=a"(lo), "=d"(hi));
     return ( (unsigned long long)lo)|( ((unsigned long long)hi)<<32 );
 }
+
+
 
 double get_read_overhead(){
     double sum = 0;

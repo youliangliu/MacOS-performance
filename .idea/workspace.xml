@@ -28,11 +28,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5abb5b7-82e2-4ef9-a7fb-eedba48e7b28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpu/cpu_overheads/loop_overhead.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpu/cpu_overheads/loop_overhead.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu/cpu_overheads/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpu/cpu_overheads/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpu/cpu_overheads/procedure_call_overhead.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpu/cpu_overheads/procedure_call_overhead.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpu/cpu_overheads/read_overhead.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpu/cpu_overheads/read_overhead.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpu/cpu_overheads/system_call_overhead.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpu/cpu_overheads/system_call_overhead.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpu/cpu_overheads/test" beforeDir="false" afterPath="$PROJECT_DIR$/cpu/cpu_overheads/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM_access/ram_access_time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/ram_access_time.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM_access/ram_access_time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/ram_access_time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/RAM_access/test" beforeDir="false" afterPath="$PROJECT_DIR$/memory/RAM_access/test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
